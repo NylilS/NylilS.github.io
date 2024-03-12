@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(pink, purple,gold );
+    margin: 0;
+    padding: 10px;
+}
+
+a {
+    color: white
+}
+
+a:hover {
+    color: #6846ff;
+}
+
+a:visited {
+    color: #ffffff;
+}
+
+#content{
+width: 60%;
+margin: auto;
+border: 1px solid indigo
+}
+
+#banner {
+    background-color: silver rgb(rgba(175, 116, 116, 0.438)(151, 120, 120), green, blue)
+    text-align: center;
+    border: 20px solid 
+    margin: 5px;
+}
+
+#blogposts {
+    margin: 10px;
+    border: 1px solid rgb(194, 181, 181);
+    background-color: rgba(199, 37, 240, 0.938);
+}
+
+.post {
+    margin: 10px;
+    padding:10px;
+    border: 1px solid gold
+    background-color: purple;
+}
+
+.post .left {
+    /* float: left; */
+    margin-right: 10px;
+    display: block;
+}
+
+.post img {
+    width: 200px;
+}
+
+.Gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

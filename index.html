@@ -1,18 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kashimo</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link id="lightSheet" rel="stylesheet"  href="css/style.css">
+    <link id="darkSheet" rel="stylesheet" media="none" href="css/dark.css">
 </head>
+
 <body>
-   <div id="content">
-    <h1>Welcome to my website</h1>
-    <p>Click the image below to play it</p>
-    <a href="">
-        <img src="img/download (1).jpg" alt="A electric man.">
-    </a>
-</div> 
+    <div id="content">
+       
+       <h1 style="font-size: 60px;">Welcome to the Website</h1>
+       
+   
+
+        </div>
+        
+
+        <div id="banner">
+            <h1>My Website</h1>
+            <a href="about.html">About Me</a> |
+            <a href="gameguide.html">Get to School</a>
+            <a href="#" onclick="changeSheet()">Change Mode</a>
+        </div>
+
+        <div id="blogposts">
+            <div class="post">
+                <h2>About Me (Likes and dislikes)</h2>
+                <header>Likes and dislikes</header>
+                <h3 style="font-size: 40;">Dislikes</h3>
+                <h3>Hello!, anyone who is viewing this wesbite on microsoft edge. I'm this "beatiful" website's creator, but you already know that.
+                    What you want to know are my likes and dislikes and i won't waste your time any further so first i'll have to say I don't like cheese. Yes i know,
+                    and your going to think do i like pizza and i do but thats the only exception cheese on anything else just ruins it visually and taste wise and don't
+                    get me started on melted cheese you can taste high blood pressure from the smell alone. I also don't like ela due to the simple fact that it i need to be
+                    awake to do good at it since it is my first class i am sleepy but if i had math first which I can do in my sleep ela would be a breeze.
+                <p> Click <a href="about.html">here</a>to learn more</p>
+                <h3 style="font-size: 40;">Likes</h3>
+                <h3>Lets get one thing out of the way the only thing I like more than anime besides food is the grey ranger in ANY power rangers.
+                    If you can't already tell silver is tied with my favorite color green and no mattter what show he's in he always look cooled
+                    (to bad he got replaced with the gold ranger). And before i wrap things up my favorite types of characters in any show are either
+                    the manipulators and The guy who messes with everyone because he is bored. I love manipulators like Aizen from bleach so much i worked
+                    on a website on my own freetime just to talk about them and give them a Gallery.
+                </h3>
+                
+            </div>
+            <div class="post">
+                <h2 style="display: block;">Get to School</h2>
+             <img src="img/loadingscreen.png" alt="Game loading screen" class="left">
+             <img src="img/download (1).jpg" alt="A electric goat">
+             <img src="img/bestpowerranger.jpg" alt="The goat">
+                <h4>Get to School is a smash hit Indie success about getting to school...presumably</h4>
+                <h4> Click <a href="gameguide.html">here</a>to play</h4>
+                
+            </div>
+
+        </div>
 </body>
+
+<script>
+
+var lightMode= true;
+
+function changeSheet () {
+    // make lightMode equal NOT lightMode by doing lightMode = !lightMode
+    lightMode = !lightMode;
+    var lightSheet = document.getElementById("lightSheet")
+    var darkSheet = document.getElementById("darkSheet")
+
+    // if lightMode turned off, display dark stylesheet
+    if (lightMode == false) {
+        console.log("Turning dark mode on...");
+        darkSheet.media = "";
+        lightSheet.media = "none"
+    } else {
+        console.log("Turning light  mode on...");
+        darkSheet.media = "none";
+        lightSheet.media = ""
+    }
+}
+
+</script>
+
 </html>

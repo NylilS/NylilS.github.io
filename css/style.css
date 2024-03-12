@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(silver,indigo,midnightblue);
+    margin: 0;
+    padding: 0;
+}
+
+#content{
+width: 60%;
+margin: auto;
+border: 1px solid silver
+}
+
+#banner {
+    background-color: silver rgb(rgba(175, 116, 116, 0.438)(151, 120, 120), green, blue)
+    text-align: center;
+    border: 20px solid ;
+    margin: 5px;
+}
+
+#blogposts {
+    margin: 10px;
+    border: 1px solid silver;
+    background-color: blueviolet;
+    text-decoration: dotted silver;
+}
+
+.post {
+    margin: 10px;
+    padding:10px;
+    border: 1px solid silver;
+    background-color: indigo;
+}
+
+.post .left {
+    /* float: left; */
+    margin-right: 10px;
+    display: block;
+}
+
+.post img {
+    width: 200px;
+}
+
+.Gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
