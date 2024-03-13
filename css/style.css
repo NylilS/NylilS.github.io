@@ -47,3 +47,7 @@ border: 1px solid silver
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+a:visited {
+    color: silver;
+}
